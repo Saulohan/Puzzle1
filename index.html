@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon.png">
+    <title>Aritmética</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+        }
+
+        form{
+            
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+        h4 {
+            position: absolute;
+            left: 42.5%;
+            top: 30%;
+            width: 300px;
+            font-size: 5px;
+            color: rgba(255, 255, 255, 0.548);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <form>
+
+        <h3>((R + P )* G) / N == ?  </h3>
+        
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+
+        <h4>N == 14</h4>
+
+    </form>
+
+
+    <script>
+
+
+        function logar(){
+
+            
+            var senha = document.getElementById('senha').value;
+
+            if(senha == '?'){
+               
+                location.href = "destino.html";
+
+            }
+            else if(senha == 63){
+                alert('Burro pra caralho msh, escreve a porra do caracter animal');
+            } 
+            else if(senha == 147 || senha == 147.4 || senha == 147.46 || senha == 147.461 || senha == 147.4615 ||    senha == 147.46153 ||senha == 147.461538 ||senha == 147.4615384615385 ){
+                alert('Mds macho,errou denovo, tem q desenhar ->?<-');
+            }
+            else if(senha == '147,4' || senha == '147,46' || senha == '147,461' || senha == '147,4615' ||  senha == '147,46153' ||senha == '147,461538' ||senha == '147,4615384615385' ){
+                alert('Tenta usar ponto(.) ao inves de virgula (,)');
+            }
+            else if(senha == 17){
+                alert('17 o caralho msh,ta maluco ASCII `?`');
+            }
+           
+            else{
+                alert('Porra, tu é Analfabeto?');
+            }
+        }
+
+    </script>
+
+
+
+    </body>
+
+</html>
